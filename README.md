@@ -23,8 +23,8 @@
 
 ## 文件内容
 
-- [Server.py](./Server.py): 服务端核心代码, 已经抽象成类, 可以直接在终端中运行
-- [ChatServer.py](./ChatServer.py): 服务端的图形界面, 支持独立运行
+- [Server.py](./Server.py): 服务端核心代码, 已经抽象成类, 可以直接在终端中运行. 自动回复功能默认开启, 如果需要关闭, 则在 `Server` 类中找到 `chat()` 方法的最后一段, 注释掉复读机模式下的两行代码, 取消注释人工回复模式下两行的被注释代码. 
+- [ChatServer.py](./ChatServer.py): 服务端的图形界面, 支持独立运行. 自动回复功能默认开启, 如果需要关闭, 则在 `ChatServer.py` 中找到 `RequestSync`线程子类中的最后一段代码, 根据注释提示操作即可.
 - [Client.py](./Client.py): 客户端核心代码, 也抽象成类, 可以在终端中直接运行(请先启动服务端)
 - [ChatClient.py](./ChatClient.py): 客户端的图形界面, 支持独立运行(请先启动服务端)
 - [ChatUI.fbp](./ChatUI.fbp): wxFormBuilder的生成文件
